@@ -1,9 +1,0 @@
-E:\work\ThriftForNetty\ThriftCodesLib\bin\Debug\netcoreapp2.1\ThriftCodesLib.deps.json
-E:\work\ThriftForNetty\ThriftCodesLib\bin\Debug\netcoreapp2.1\ThriftCodesLib.dll
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.csproj.CoreCompileInputs.cache
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.AssemblyInfoInputs.cache
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.AssemblyInfo.cs
-E:\work\ThriftForNetty\ThriftCodesLib\bin\Debug\netcoreapp2.1\ThriftCodesLib.pdb
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.dll
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.pdb
-E:\work\ThriftForNetty\ThriftCodesLib\obj\Debug\netcoreapp2.1\ThriftCodesLib.csprojAssemblyReference.cache
