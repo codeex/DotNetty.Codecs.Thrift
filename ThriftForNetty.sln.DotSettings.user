@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\luo31\.nuget\packages\dotnetty.codecs\0.4.9\lib\netstandard1.3\DotNetty.Codecs.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\luo31\.nuget\packages\dotnetty.buffers\0.4.9\lib\netstandard1.3\DotNetty.Buffers.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\luo31\.nuget\packages\apache-thrift-netcore\0.9.3.2\lib\netstandard1.5\apache-thrift-netcore.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,14 @@
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ThriftCodesLib.dll
+E:\work\ThriftForNetty\ConsoleApp1\bin\Debug\netcoreapp2.1\ThriftCodesLib.pdb
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+E:\work\ThriftForNetty\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb

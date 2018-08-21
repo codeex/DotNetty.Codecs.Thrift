@@ -1,0 +1,9 @@
+E:\work\ThriftForNetty\ThriftForNetty\bin\Debug\netcoreapp2.1\ThriftForNetty.deps.json
+E:\work\ThriftForNetty\ThriftForNetty\bin\Debug\netcoreapp2.1\ThriftForNetty.dll
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.csprojAssemblyReference.cache
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.csproj.CoreCompileInputs.cache
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.AssemblyInfoInputs.cache
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.AssemblyInfo.cs
+E:\work\ThriftForNetty\ThriftForNetty\bin\Debug\netcoreapp2.1\ThriftForNetty.pdb
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.dll
+E:\work\ThriftForNetty\ThriftForNetty\obj\Debug\netcoreapp2.1\ThriftForNetty.pdb
