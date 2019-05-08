@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>Codeex.Codecs.Protobuf</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="apache-thrift-netcore" Version="0.9.3.2" />
-    <PackageReference Include="DotNetty.Codecs" Version="0.5.0" />
+    <PackageReference Include="DotNetty.Codecs" Version="0.6.0" />
   </ItemGroup>
 
 </Project>
