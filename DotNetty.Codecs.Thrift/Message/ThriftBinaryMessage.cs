@@ -9,7 +9,7 @@ namespace DotNetty.Codecs.Thrift.Message
     /// <summary>
     /// TBinaryProtocol message 
     /// </summary>
-    public class ThriftBinaryMessage : DefaultByteBufferHolder, IBinaryContent
+    public class ThriftBinaryMessage : DefaultByteBufferHolder, IThriftMessage
     {
         public ThriftBinaryMessage(IByteBuffer content)
             : base(content)
@@ -24,6 +24,8 @@ namespace DotNetty.Codecs.Thrift.Message
                .Append(']')
                .ToString();
         public override IByteBufferHolder Replace(IByteBuffer content) => new ThriftBinaryMessage(content);
+
+
 
     }
 }

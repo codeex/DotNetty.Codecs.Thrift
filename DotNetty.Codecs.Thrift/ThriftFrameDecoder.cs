@@ -46,7 +46,7 @@ namespace DotNetty.Codecs.Thrift
             if (length < 0)
             {
                 throw new CorruptedFrameException($"Negative length: {length}");
-            }            
+            }
 
             if (input.ReadableBytes < length)
             {
@@ -83,6 +83,6 @@ namespace DotNetty.Codecs.Thrift
                 buffer.ResetReaderIndex();
                 return 0;
             }
-        }        
+        }
     }
 }

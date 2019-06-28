@@ -11,8 +11,8 @@ namespace TestThriftClient
     {
         protected override void InitChannel(TcpSocketChannel channel)
         {
-            channel.Pipeline.AddLast("thrift-msg-dec", new ThriftMessageDecoder());
             channel.Pipeline.AddLast("thrift-frm-dec", new ThriftFrameDecoder());
+            channel.Pipeline.AddLast("thrift-msg-dec", new ThriftMessageDecoder());
             channel.Pipeline.AddLast(new ThriftClientHandlerAdapter());
         }
     }
