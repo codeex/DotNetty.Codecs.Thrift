@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThriftForNetty", "ThriftForNetty\ThriftForNetty.csproj", "{0E90DEB1-2DFC-4D23-BD91-BDAC2BC29F3D}"
 EndProject
@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThriftAnnotations", "ThriftAnnotations\ThriftAnnotations.csproj", "{75BC6937-313A-4C2B-A993-8B91F69EAE3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetty.Codecs.Thrift", "DotNetty.Codecs.Thrift\DotNetty.Codecs.Thrift.csproj", "{70347D26-3423-4161-8336-B136106CC51A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetty.Codecs.Thrift", "DotNetty.Codecs.Thrift\DotNetty.Codecs.Thrift.csproj", "{70347D26-3423-4161-8336-B136106CC51A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestThriftClient", "TestThriftClient\TestThriftClient.csproj", "{3ACA03F8-A5C5-44D5-B06B-845A3521BC53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{70347D26-3423-4161-8336-B136106CC51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70347D26-3423-4161-8336-B136106CC51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70347D26-3423-4161-8336-B136106CC51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACA03F8-A5C5-44D5-B06B-845A3521BC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACA03F8-A5C5-44D5-B06B-845A3521BC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACA03F8-A5C5-44D5-B06B-845A3521BC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACA03F8-A5C5-44D5-B06B-845A3521BC53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

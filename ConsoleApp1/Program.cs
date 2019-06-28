@@ -43,11 +43,11 @@ namespace ConsoleApp1
                     .Handler(new ActionChannelInitializer<ISocketChannel>(channel =>
                     {
                         IChannelPipeline pipeline = channel.Pipeline;
-                        
+
                         pipeline.AddLast(new LoggingHandler());
                         //pipeline.AddLast("frameDecoder", new LengthFieldBasedFrameDecoder(1024 * 1024, 0, 4, 0, 4));
-                        pipeline.AddLast("thrift-enc", new ThriftEncoder(1024*1024));
-                        pipeline.AddLast("thrift-dec", new ThriftDecoder(1024*1024,true));
+                        pipeline.AddLast("thrift-enc", new ThriftEncoder(1024 * 1024));
+                        pipeline.AddLast("thrift-dec", new ThriftDecoder(1024 * 1024, true));
 
                         pipeline.AddLast("echo", new EchoClientHandler());
                     }));
@@ -104,7 +104,7 @@ namespace ConsoleApp1
         //重写基类方法，当链接上服务器后，马上发送Hello World消息到服务端
         public override void ChannelActive(IChannelHandlerContext context)
         {
-             context.WriteAndFlushAsync(this.initialMessage);
+            context.WriteAndFlushAsync(this.initialMessage);
         }
 
         private List<IByteBuffer> msgs = new List<IByteBuffer>();
@@ -148,15 +148,15 @@ namespace ConsoleApp1
                 byteBuffer.ReadMessageEnd();
 
                 Console.WriteLine("Received from server: " + success);
-                
+
             }
         }
 
         public override void ChannelReadComplete(IChannelHandlerContext context)
         {
-            
+
             string Success = string.Empty;
-            
+
             context.Flush();
         }
 

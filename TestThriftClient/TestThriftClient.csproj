@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DotNetty.Transport" Version="0.6.0" />
+        <PackageReference Include="apache-thrift-netcore" Version="0.9.3.2" />
+        <PackageReference Include="DotNetty.Codecs" Version="0.6.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\DotNetty.Codecs.Thrift\DotNetty.Codecs.Thrift.csproj" />
+    </ItemGroup>
+
+</Project>

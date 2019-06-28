@@ -17,7 +17,7 @@ namespace DotNetty.Codecs.Thrift
         /// 解析数据时，最大递归深度 64
         /// </summary>
         public const int DefaultRecursionDepth = 64;
-        //todo： 以后如果有变动
+        //todo： 以后如果有变动，跟进
         public ThriftOptions(string thriftVersion = "0.9")
         {
             VERSION_MASK = 0xffff0000;
@@ -50,6 +50,6 @@ namespace DotNetty.Codecs.Thrift
 
         public readonly uint VERSION_MASK;
 
-       
+
     }
 }
