@@ -7,6 +7,7 @@ using System.Diagnostics.Contracts;
 using System.Text;
 using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
+using ThriftSharp.Models;
 
 namespace DotNetty.Codecs.Thrift
 {
@@ -64,7 +65,7 @@ namespace DotNetty.Codecs.Thrift
             }
         }
 
-        static int ReadRawVarint32(IByteBuffer buffer)
+        private int ReadRawVarint32(IByteBuffer buffer)
         {
             Contract.Requires(buffer != null);
 
@@ -76,7 +77,31 @@ namespace DotNetty.Codecs.Thrift
             buffer.MarkReaderIndex();
             if (buffer.ReadableBytes >= 4)
             {
-                return buffer.ReadInt();
+                var size = buffer.ReadInt();
+                string name;
+                ThriftMessageType type;
+                if (size < 0)
+                {
+                    uint version = (uint)size & _opts.VERSION_MASK;
+                    if (version != _opts.VERSION_1)
+                    {
+                        throw new CorruptedFrameException("ThriftProtocolExceptionType.InvalidProtocol");
+                    }
+
+                    var len = buffer.ReadInt();
+                    name = buffer.ReadString(len, Encoding.UTF8);
+                    type = (ThriftMessageType)(size & 0xFF);
+                }
+                else
+                {
+                    // Old protocol version
+                    name = buffer.ReadString(size, Encoding.UTF8);
+                    type = (ThriftMessageType)buffer.ReadByte();
+                }
+
+                var seq = buffer.ReadInt(); // Message sequence ID
+
+                return size;
             }
             else
             {
