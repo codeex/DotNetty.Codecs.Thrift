@@ -49,6 +49,7 @@ namespace TestThriftServer
             {
                 var pf = new TBinaryProtocol.Factory();
                 channel.Pipeline.AddLast("thrift-msg-dec", new ThriftMessageDecoder(pf));
+                channel.Pipeline.AddLast("thrift-msg-enc", new ThriftMessageEncoder());
                 channel.Pipeline.AddLast(new ThriftServerHandler());
             }
         }

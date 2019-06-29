@@ -3,6 +3,9 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using DotNetty.Buffers;
+using DotNetty.Codecs.Thrift.Message;
+using DotNetty.Codecs.Thrift.Protocol;
+using DotNetty.Codecs.Thrift.Transport;
 using DotNetty.Transport.Channels;
 
 namespace TestThriftServer
@@ -15,7 +18,14 @@ namespace TestThriftServer
 
         public override void ChannelRead(IChannelHandlerContext context, object message)
         {
-            IByteBuffer buf = (IByteBuffer)message;
+            var msg = (ThriftMessage)message;
+            var bp = new TBinaryProtocol.Factory();
+            var t = new TThriftTransport(context.Channel, msg.Content, ThriftTransportType.Framed);
+            var tp = bp.GetProtocol(t);
+            var mh = tp.ReadMessageBegin();
+           
+            tp.ReadMessageEnd();
+            var buf = msg.Content;
             byte[] req = new byte[buf.ReadableBytes];
             buf.ReadBytes(req);
             //ReadOnlySpan<byte> bytesBuffer = req;
