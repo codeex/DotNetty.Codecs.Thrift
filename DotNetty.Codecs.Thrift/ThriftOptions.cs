@@ -22,9 +22,10 @@ namespace DotNetty.Codecs.Thrift
         {
             VERSION_MASK = 0xffff0000;
             VERSION_1 = 0x80010000;
-            MaxFrameSize = 10240 * 1024; //10M
+            MaxFrameSize = 5* 10240 * 1024; //50M
             StrictRead = false;
             StrictWrite = true;
+            MessageFrameSize = 4;
         }
         /// <summary>
         /// 最大通讯字节限制
@@ -49,6 +50,8 @@ namespace DotNetty.Codecs.Thrift
         /// </summary>
 
         public readonly uint VERSION_MASK;
+
+        public readonly int MessageFrameSize;
 
 
     }

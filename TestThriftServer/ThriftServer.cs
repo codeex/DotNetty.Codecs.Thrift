@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using DotNetty.Codecs.Thrift;
+using DotNetty.Codecs.Thrift.Protocol;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
@@ -46,8 +47,8 @@ namespace TestThriftServer
         {
             protected override void InitChannel(TcpSocketChannel channel)
             {
-                channel.Pipeline.AddLast("thrift-frm-dec", new ThriftFrameDecoder());
-                channel.Pipeline.AddLast("thrift-msg-dec", new ThriftMessageDecoder());
+                var pf = new TBinaryProtocol.Factory();
+                channel.Pipeline.AddLast("thrift-msg-dec", new ThriftMessageDecoder(pf));
                 channel.Pipeline.AddLast(new ThriftServerHandler());
             }
         }
